@@ -1,0 +1,96 @@
+@keyframes piscar {
+  0% {
+      color: white;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  10% {
+    color: #0f90ccd3;
+    text-shadow: 0 0 5px rgba(15, 144, 205, 0.6);
+  }
+  20% {
+    color: #33bd45e3;
+    text-shadow: 0 0 5px rgba(51, 189, 69, 0.6);
+  }
+  30% {
+    color: #aee614d5;
+    text-shadow: 0 0 5px rgba(174, 230, 20, 0.6);
+  }
+  40% {
+    color: rgba(197, 41, 41, 0.87);
+    text-shadow: 0 0 5px rgba(197, 41, 41, 0.6);
+  }
+  50% {
+    color: #9a41e8d3;
+    text-shadow: 0 0 5px rgba(154, 65, 232, 0.6);
+  }
+  60% {
+    color: #ffb400e3;
+    text-shadow: 0 0 5px rgba(255, 180, 0, 0.6);
+  }
+  70% {
+    color: #14e8e5d5;
+    text-shadow: 0 0 5px rgba(20, 232, 229, 0.6);
+  }
+  80% {
+    color: #ff1493;
+    text-shadow: 0 0 5px rgba(255, 20, 147, 0.6);
+  }
+  90% {
+    color: #ff6347;
+    text-shadow: 0 0 5px rgba(255, 99, 71, 0.6);
+  }
+  100% {
+    color: #ffd700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+  }
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid;
+}
+
+#root .contador{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#root{
+ display: flex;
+ flex-direction: row; 
+
+}
+#root #titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  animation: piscar 1.3s infinite;
+}
+
+#root button:hover{
+  color: red;
+  border: solid red;
+}
+
+#root .subcontador{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+#root .subcontador #numero{   
+height: 60px;
+width: 90px;
+font-size: 40px;
+text-align: center;
+animation: piscar 1.3s infinite;
+}
+
+#root .subcontador button{
+  border-radius: 8px;
+  cursor: pointer;
+}
